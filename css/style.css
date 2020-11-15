@@ -85,12 +85,14 @@ body{
     width: 100%;
     height: 70px;
     justify-content: flex-end;
-    background: rgba(41, 42, 46, 0.7);
+    /* background: rgba(41, 42, 46, 0.7); */
+    background: rgb(98 145 161);
 }
 .footer{
     width: 100%;
     height: 120px;
-    background: rgba(41, 42, 46, 0.7);
+    /* background: rgba(41, 42, 46, 0.7); */
+    background: rgb(98 145 161);
     text-align: center;
 }
 .footer p {
@@ -103,7 +105,8 @@ body{
 }
 .container{
     min-height: 900px;
-    background-color: #EEE;
+    /* background-color: #EEE; */
+    background-color: rgba(98, 145, 161, 0.2);
     display: block;
 }
 .frame{
@@ -191,14 +194,10 @@ body{
 }
 
 /* Galeria.html */
-
 #titulo-galeria{
     background-image: url("../img/agua_1.jpg");
     height: 285px;
     display: flex;
-}
-#titulo-galeria h2 {
-    margin: auto;
 }
 #titulo-galeria h2 {
     margin: auto;
@@ -225,4 +224,24 @@ body{
 
 .galeria-main {
     padding-bottom: 50px;
+}
+/*objetivo.html*/
+#titulo-objetivo{
+    background-image: url("../img/rio.jpg");
+    height: 600px;
+    display: flex;
+    filter: brightness(80%);
+}
+#titulo-objetivo h2 {
+    margin: auto;
+    font-size: 95px;
+    color: #6291a1;
+}
+.texto-objetivo{
+    margin-top: 20px;
+    padding: 10px 25px;
+    text-align: justify;
+}
+.texto-objetivo p{
+    padding: 15px 25px;
 }

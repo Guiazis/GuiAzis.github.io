@@ -126,9 +126,8 @@ body{
     margin: 0 auto;
 }
 .frame-flex{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    text-align: center;
+    display: flex;
+    
 }
 
 .lista_menu{
@@ -214,15 +213,24 @@ body{
 
 .info{
     border: 2000px;
-    border-radius: 2000px;
+    /* border-radius: 2000px; */
+    border-top-left-radius: 2000px;
+    border-top-right-radius: 2000px;
     width: 250px;
-    height: 250px;
+    height: 270px;
     margin-top: 10%;
-    margin-left: 6%;
-    margin-right: 5%;
+    /* margin-left: 6%;
+    margin-right: 5%; */
     background-color: rgb(70 130 180 / 0.6);
 }
-
+.but_sobre{
+    width: 30px;
+    border: none;
+    background: transparent;
+    font-size: 25px;
+    margin: 15px 0;
+    cursor: pointer;
+}
 .texto{
     display: none;
     margin: 25px;
@@ -232,6 +240,9 @@ body{
 
 .frame-sobre {
     padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
 }
 
 /* Galeria.html */

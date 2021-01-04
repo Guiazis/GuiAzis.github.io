@@ -10,8 +10,28 @@ $(function(){
         $(this).find("p").css("display", "none");
     });
 
-    // Para a página sobre
+    // Para a página Sobre
 
-    
+    $(".frame-sobre").on("click", "div", function(){
+        if($(this).hasClass("exibido")){
+            $(this).removeClass("exibido");
+            $(this).animate({
+                        height: "270px"
+                    });
+            $(this).find("p").fadeOut(300); 
+            $(this).find(".but_sobre").css("transform", "rotate(0deg)");
+            
+        }else{
+            $(this).addClass("exibido");
+            $(this).animate({
+                height: "600px"
+            });
+            $(this).find("p").fadeIn();
+            $(this).find(".but_sobre").css("transform", "rotate(180deg)");
+        }
+        
+        
+    });  
+
 })
 

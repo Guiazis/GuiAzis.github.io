@@ -20,6 +20,9 @@ body{
     margin: 36px;
     color: #477382;
 }
+.home-text{
+    padding-top: 30px;
+}
 .paragrafo-topicos{
     font-size: 14px;
     text-align: justify;
@@ -34,6 +37,7 @@ body{
     position: relative;
 }
 .grid-imagem p{
+    display: none;
     position: absolute;
     top: 50%;
     padding: 12px;
@@ -45,12 +49,13 @@ body{
     margin: auto;
     height: 200px;
     /* transition: 1.5s; */
-    filter: blur(1px);
-    -webkit-filter: blur(1px);
+    /* filter: blur(1px);
+    -webkit-filter: blur(1px); */
 }
 .secao-topicos{
     text-align: center;
     grid-column-gap: 45px;
+    padding: 30px 0;
 }
 .secao-topicos article{
     padding: 15px 0;
@@ -110,7 +115,7 @@ body{
     height: 100px;
 }
 .container{
-    min-height: 800px;
+    /* min-height: 800px; */
     display: block;
 }
 .frame{

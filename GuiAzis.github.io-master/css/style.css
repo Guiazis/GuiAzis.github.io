@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    height: 100%;
+    
+}
+.texto-titulo{
+    text-align: center;
+    color: #6aa7bb;
+    padding-top: 24px;
+}
+.paragrafo-index{
+    font-size: 14px;
+    text-align: justify;
+    margin: 36px;
+    color: #477382;
+}
+.paragrafo-topicos{
+    font-size: 14px;
+    text-align: justify;
+    padding: 25px;
+}
+.grid-imagem, .secao-topicos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.grid-imagem div{
+    margin: auto;
+    position: relative;
+}
+.grid-imagem p{
+    display: none;
+    position: absolute;
+    top: 50%;
+    padding: 12px;
+    background: rgb(98 145 161 / 0.6);
+}
+
+.grid-imagem img{
+    width: 300px;
+    margin: auto;
+    height: 200px;
+    /* transition: 1.5s; */
+    /* filter: blur(1px); */
+    /* -webkit-filter: blur(1px); */
+}
+.secao-topicos{
+    text-align: center;
+    grid-column-gap: 45px;
+}
+.secao-topicos article{
+    padding: 15px 0;
+    color: aliceblue;
+}
+.secao-topicos a {
+    text-decoration: none;
+}
+.redirecionar{
+    margin: 48px 0;
+    background: rgb(70 130 180 / 0.6);
+    position: relative;    
+    box-shadow: 0px 0px 11px black;
+}
+#video-index{
+    text-align: center;
+    padding-bottom: 65px;
+}
+/* .grid-imagem img:hover{
+    width: 400px;
+    height: 300px;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+} */
+#logo{
+    margin-top: 1px;
+    height: 65px;
+}
+
+.cabecalho{
+    display: inline-flex;
+    width: 100%;
+    height: 70px;
+    justify-content: flex-end;
+    /* background: rgba(41, 42, 46, 0.7); */
+    background: rgb(98 145 161);
+}
+.footer{
+    width: 100%;
+    height: 120px;
+    /* background: rgba(41, 42, 46, 0.7); */
+    background: rgb(98 145 161);
+    text-align: center;
+}
+.footer p {
+    padding: 7px 0;
+    color: azure;
+}
+#textarea{
+    width: 200px;
+    height: 100px;
+}
+.container{
+    min-height: 900px;
+    /* background-color: #EEE; */
+    background-color: rgba(98, 145, 161, 0.2);
+    display: block;
+}
+.frame{
+    width: 85%;
+    margin: 0 auto;
+}
+.frame-flex{
+    display: flex;
+}
+.lista_menu{
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+}
+.navbar_header{
+    width: 100%;
+    text-align: end;
+}
+.lista_menu li{
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.lista_menu a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #DDD;
+    padding: 17px;
+
+}
+
+.lista_menu li:hover{
+    background-color: #4a4d55b3;
+}
+
+.meta{
+    width: 200px;
+    height: 50px;
+    border: 1px black solid;
+    margin-left: 8%;
+    margin-right: 7%;
+    margin-top: 10px;
+    display: inline-block;
+}
+.meta p{
+    text-align: center;
+}
+
+/*Sobre.html*/
+.info{
+    
+    width: 250px;
+    height: 650px;
+    margin-top: 10%;
+    margin-left: 6%;
+    margin-right: 5%;
+    background-color: rgb(70 130 180 / 0.6);
+}
+.descricao{
+    padding: 30px 0;
+}
+.descricao h2{
+    text-align: center;
+}
+.descricao p{
+    margin: 25px 65px;
+}
+#perfil{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-left: auto;
+    border-radius: 50%;
+}
+
+#texto{
+    margin: 25px;
+    text-align: justify;
+
+}
+
+/* Galeria.html */
+#titulo-galeria{
+    background-image: url("../img/agua_1.jpg");
+    height: 285px;
+    display: flex;
+}
+#titulo-galeria h2 {
+    margin: auto;
+    font-size: 95px;
+    color: #6291a1;
+}
+
+.grid-galeria{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+}
+
+.grid-galeria img {
+    width: 300px;
+    height: 240px;
+    margin-top: 30px;
+    transition: 1.5s;
+    border-radius: 30px;
+}
+.grid-galeria img:hover{
+    transform: scale(1.2)
+}
+
+.galeria-main {
+    padding-bottom: 50px;
+}
+/*objetivo.html*/
+#titulo-objetivo{
+    background-image: url("../img/rio.jpg");
+    height: 600px;
+    display: flex;
+    filter: brightness(80%);
+}
+#titulo-objetivo h2 {
+    margin: auto;
+    font-size: 95px;
+    color: #6291a1;
+}
+.texto-objetivo{
+    margin-top: 20px;
+    padding: 10px 25px;
+    text-align: justify;
+}
+.texto-objetivo p{
+    padding: 15px 25px;
+}

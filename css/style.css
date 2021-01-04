@@ -25,6 +25,9 @@ body{
     text-align: justify;
     padding: 25px;
 }
+.home-text{
+    padding-top: 30px;
+}
 .grid-imagem, .secao-topicos{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -52,6 +55,7 @@ body{
 .secao-topicos{
     text-align: center;
     grid-column-gap: 45px;
+    padding: 30px 0;
 }
 .secao-topicos article{
     padding: 15px 0;
@@ -111,7 +115,7 @@ body{
     height: 100px;
 }
 .container{
-    min-height: 800px;
+    /* min-height: 800px; */
     display: block;
 }
 .frame{
@@ -119,7 +123,9 @@ body{
     margin: 0 auto;
 }
 .frame-flex{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
 }
 
 .lista_menu{
@@ -178,17 +184,6 @@ body{
     color: black;
 }
 
-.info{
-    border-top-left-radius: 2000px;
-    border-top-right-radius: 2000px;
-    width: 250px;
-    height: 600px;
-    margin-top: 10%;
-    margin-left: 6%;
-    margin-right: 5%;
-    background-color: rgb(70 130 180 / 0.6);
-}
-
 .descricao {
     padding: 30px;
     margin: 0 auto;
@@ -204,7 +199,7 @@ body{
 .descricao p{
     margin: 25px 400px;
 }
-#perfil{
+.perfil{
     width: 200px;
     height: 200px;
     display: block;
@@ -214,7 +209,19 @@ body{
     border-radius: 50%;
 }
 
-#texto{
+.info{
+    border: 2000px;
+    border-radius: 2000px;
+    width: 250px;
+    height: 250px;
+    margin-top: 10%;
+    margin-left: 6%;
+    margin-right: 5%;
+    background-color: rgb(70 130 180 / 0.6);
+}
+
+.texto{
+    display: none;
     margin: 25px;
     text-align: justify;
 

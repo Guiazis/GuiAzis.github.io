@@ -31,10 +31,6 @@ body{
 .home-text{
     padding-top: 30px;
 }
-.grid-imagem, .secao-topicos{
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
 .grid-imagem div{
     margin: auto;
     position: relative;
@@ -241,10 +237,8 @@ body{
 .frame-sobre {
     padding-bottom: 100px;
     display: grid;
-    grid-template-columns: auto auto auto;
     text-align: center;
 }
-
 /* Galeria.html */
 #titulo-galeria{
     background-image: url("../img/agua_1.jpg");
@@ -292,10 +286,149 @@ body{
     color: black;
 }
 .texto-objetivo{
-    margin-top: 100px;
+    margin: 100px auto;
     padding: 10px 25px;
     text-align: justify;
 }
 .texto-objetivo p{
     padding: 15px 25px;
+}
+
+
+
+@media only screen and (min-width: 1205px){
+    .grid-imagem, .secao-topicos{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .frame-sobre {
+        padding-bottom: 100px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1204px) and (min-width: 801px){
+    .grid-imagem, .secao-topicos{
+        display: grid;
+        grid-template-areas: 
+                        "a b"
+                        "c c";
+    }
+
+    .frame-sobre{
+        padding-bottom: 100px;
+        display: grid;
+        grid-template-areas: 
+                        "a b"
+                        "c c";
+        text-align: center;
+    }
+
+    .info {
+        margin: 40px auto;
+    }
+
+    .grid-galeria{
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: center;
+    }
+
+    .item1 {
+        grid-area: a;
+    }
+
+    .item2 {
+        grid-area: b;
+    }
+
+    .item3 {
+        grid-area: c;
+    }
+
+    .descricao h2 {
+        text-align: center;
+        margin: 25px auto;
+    }
+
+    .descricao p {
+        margin: 25px 20%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .grid-imagem, .secao-topicos{
+        display: grid;
+        grid-template-areas: 
+                        "a"
+                        "b"
+                        "c";
+    }
+
+    .info {
+        margin: 40px auto;
+    }
+
+    .grid-galeria{
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+    }
+
+
+    .item1 {
+        grid-area: a;
+    }
+
+    .item2 {
+        grid-area: b;
+    }
+
+    .item3 {
+        grid-area: c;
+    }
+
+    .navbar_header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cabecalho {
+        height: fit-content;
+    }
+
+    .frame-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #logo {
+        margin: 0 auto;
+        width: 167.203px;
+        height: 65px;
+    }
+
+    .descricao h2 {
+        text-align: center;
+        margin: 25px 0;
+    }
+
+    .descricao p {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .frame {
+        width: auto;
+    }
+
+    #video-index video{
+        width: 250px;
+        height: 160px;
+    }
 }

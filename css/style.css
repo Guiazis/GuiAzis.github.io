@@ -72,12 +72,9 @@ body{
     text-align: center;
     padding-bottom: 65px;
 }
-/* .grid-imagem img:hover{
-    width: 400px;
-    height: 300px;
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
-} */
+.hamburger_mobile{
+    display: none;
+}
 #logo{
     margin-top: 1px;
     height: 65px;
@@ -400,14 +397,26 @@ body{
         height: fit-content;
     }
 
-    .frame-flex {
+    /* .frame-flex {
         display: flex;
         flex-direction: column;
         justify-content: center;
+    } */
+    .hamburger_mobile{
+        display: block;
+        font-size: 30px;
+        margin-top: 12px;
+        float: right;
+        color: #fff;
     }
-
+    .navbar_header{
+        display: none;
+    }
+    .lista_menu{
+        display: none;
+    }
     #logo {
-        margin: 0 auto;
+        margin: 0 auto auto 0;
         width: 167.203px;
         height: 65px;
     }
@@ -423,9 +432,6 @@ body{
 }
 
 @media only screen and (max-width: 600px){
-    .frame {
-        width: auto;
-    }
 
     #video-index video{
         width: 250px;
